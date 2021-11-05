@@ -1,0 +1,28 @@
+@media (max-width: 1024px) and (min-width: 600px) {
+  .header_helloween {
+    font-size: 4rem;
+    height: 150px;
+  }
+}
+
+@media (max-width: 599px) {
+  .header_helloween {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    font-family: sans-serif;
+  }
+}
+
+@media (max-width: 1024px) {
+  .conteiner-map-card {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    padding-left: 25%;
+  }
+}
+/*# sourceMappingURL=media.css.map */

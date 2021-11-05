@@ -1,0 +1,523 @@
+@-webkit-keyframes ghost-fly {
+  0% {
+    offset-distance: 0;
+  }
+  100% {
+    offset-distance: 100%;
+    opacity: 0;
+  }
+}
+
+@keyframes ghost-fly {
+  0% {
+    offset-distance: 0;
+  }
+  100% {
+    offset-distance: 100%;
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes witch-fly {
+  100% {
+    offset-distance: 100%;
+  }
+}
+
+@keyframes witch-fly {
+  100% {
+    offset-distance: 100%;
+  }
+}
+
+@-webkit-keyframes vertical_slide {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes vertical_slide {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes flip {
+  0% {
+    opacity: 0;
+    -webkit-transform: perspective(400px) rotateY(90deg);
+            transform: perspective(400px) rotateY(90deg);
+  }
+  40% {
+    -webkit-transform: perspective(400px) rotateY(-10deg);
+            transform: perspective(400px) rotateY(-10deg);
+  }
+  70% {
+    -webkit-transform: perspective(400px) rotateY(10deg);
+            transform: perspective(400px) rotateY(10deg);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: perspective(400px) rotateY(0deg);
+            transform: perspective(400px) rotateY(0deg);
+    background: url(/img/halloween.png) no-repeat center;
+  }
+}
+
+@keyframes flip {
+  0% {
+    opacity: 0;
+    -webkit-transform: perspective(400px) rotateY(90deg);
+            transform: perspective(400px) rotateY(90deg);
+  }
+  40% {
+    -webkit-transform: perspective(400px) rotateY(-10deg);
+            transform: perspective(400px) rotateY(-10deg);
+  }
+  70% {
+    -webkit-transform: perspective(400px) rotateY(10deg);
+            transform: perspective(400px) rotateY(10deg);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: perspective(400px) rotateY(0deg);
+            transform: perspective(400px) rotateY(0deg);
+    background: url(/img/halloween.png) no-repeat center;
+  }
+}
+
+@-webkit-keyframes slide {
+  from {
+    margin-left: -3000px;
+    opacity: 0;
+  }
+  to {
+    opacity: 0.75;
+  }
+}
+
+@keyframes slide {
+  from {
+    margin-left: -3000px;
+    opacity: 0;
+  }
+  to {
+    opacity: 0.75;
+  }
+}
+
+@-webkit-keyframes bounce-out {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  70% {
+    opacity: 1;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(0.3);
+            transform: scale(0.3);
+  }
+}
+
+@keyframes bounce-out {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  70% {
+    opacity: 1;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(0.3);
+            transform: scale(0.3);
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 600px) {
+  .header_helloween {
+    font-size: 4rem;
+    height: 150px;
+  }
+}
+
+@media (max-width: 599px) {
+  .header_helloween {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    font-family: sans-serif;
+  }
+}
+
+@media (max-width: 1024px) {
+  .conteiner-map-card {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    padding-left: 25%;
+  }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background: url(/img/vecteezy.jpg) no-repeat;
+  background-color: wheat;
+  background-size: 1800px auto;
+  max-width: 1800px;
+  max-height: 1800px;
+}
+
+.header_helloween {
+  font-family: "Gondola SD - Swash", sans-serif;
+  font-weight: bolder;
+  font-size: 7rem;
+  text-align: center;
+  height: 200px;
+  -webkit-box-shadow: 0px 20px 20px 0px #000;
+          box-shadow: 0px 20px 20px 0px #000;
+  margin-top: 10px;
+  color: orange;
+}
+
+.conteiner-map-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: url(/img/large_haunted_-house.jpg) no-repeat center;
+  background-size: 100%;
+  margin: 50px 0 0 0;
+  padding-left: 50px;
+  min-width: 215px;
+  opacity: 0.9;
+}
+
+.conteiner-map-card .conteiner-map-card__worm,
+.conteiner-map-card .conteiner-map-card__cross,
+.conteiner-map-card .conteiner-map-card__pike,
+.conteiner-map-card .conteiner-map-card__booba {
+  width: 200px;
+  height: 300px;
+  border-radius: 5%;
+}
+
+.witch {
+  background: url(/img/flying-witch.png) no-repeat;
+  -webkit-animation: witch-fly 6s infinite linear;
+          animation: witch-fly 6s infinite linear;
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  offset-path: path("m350, 525 l134,-45l38,-55l12,-45l7,-56l-4,-43l-14,-36l-28,-29l-43,-20l-64,-16l-59,24l-55,47l-9,58l13,61l33,35l31,26l53,31l96,40c0,0 131,-3 132,-3c1,0 150,-88 151,-89c1,-1 111,-95 111,-95c0,0 66,-86 67,-86c1,0 290,-389 290,-389");
+  opacity: 0.75;
+}
+
+.conteiner-map-card__worm,
+.conteiner-map-card__cross,
+.conteiner-map-card__pike,
+.conteiner-map-card__booba {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  line-height: 35px;
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: -5px;
+}
+
+.conteiner-map-card__worm {
+  -webkit-box-shadow: 0 0px 2px 3px #ffff99;
+          box-shadow: 0 0px 2px 3px #ffff99;
+  color: red;
+  background: url(/img/sugarskull-with-roses.jpg) repeat-y center rgba(255, 255, 255, 0.9);
+  margin: 25px 50px 25px 0px;
+  width: 300px;
+}
+
+.conteiner-map-card__worm:before {
+  content: "\2665";
+  font-size: 25px;
+  padding: 5px 0px 0px 5px;
+}
+
+.conteiner-map-card__worm:after {
+  content: "\2665";
+  font-size: 25px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  padding: 0px 10px 15px 0px;
+}
+
+.conteiner-map-card__cross {
+  -webkit-box-shadow: 0 0px 2px 3px #ffff99;
+          box-shadow: 0 0px 2px 3px #ffff99;
+  background: url(/img/scary-pumpkin.jpg) no-repeat center rgba(255, 255, 255, 0.9);
+  color: #fff;
+  margin: 25px 50px 25px 0px;
+}
+
+.conteiner-map-card__cross:before {
+  content: "\2663";
+  font-size: 25px;
+  padding: 5px 0px 0px 5px;
+}
+
+.conteiner-map-card__cross:after {
+  content: "\2663";
+  font-size: 25px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  padding: 25px 10px 15px 0px;
+}
+
+.conteiner-map-card__pike {
+  -webkit-box-shadow: 0 0px 2px 3px #ffff99;
+          box-shadow: 0 0px 2px 3px #ffff99;
+  background: url(/img/witch-hallowen.jpg) repeat-y center black;
+  color: #fff;
+  margin: 25px 50px 25px 0px;
+}
+
+.conteiner-map-card__pike:before {
+  content: "\2660";
+  font-size: 30px;
+  padding: 0px 0px 0px 5px;
+  color: #fff;
+}
+
+.conteiner-map-card__pike:after {
+  content: "\2660";
+  font-size: 30px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  padding: 0px 10px 15px 0px;
+  color: #fff;
+}
+
+.conteiner-map-card__pike:active {
+  background: url(/img/witch-hallowen.jpg) no-repeat center black;
+}
+
+.conteiner-map-card__booba {
+  color: red;
+  margin: 25px 50px 25px 0px;
+}
+
+.conteiner-map-card__booba:before {
+  content: "\2666";
+  font-size: 30px;
+  padding: 0px 0px 0px 5px;
+}
+
+.conteiner-map-card__booba:after {
+  content: "\2666";
+  font-size: 30px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  padding: 0px 10px 15px 0px;
+}
+
+.conteiner-map-card__booba:last-child {
+  margin-right: 0;
+  background: url(/img/da-a-de-muertos-illustration.jpg) no-repeat center black;
+  -webkit-box-shadow: 0 0px 2px 3px #ffff99;
+          box-shadow: 0 0px 2px 3px #ffff99;
+  background-size: 210px 300px;
+}
+
+.card__worm-number-h {
+  padding: 5px 0px 0px 0px;
+  width: 35px;
+}
+
+.card__worm-number-f {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  padding: 0px 0px 15px 85px;
+}
+
+.conteiner-map-card {
+  -webkit-animation-name: slide;
+          animation-name: slide;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+.conteiner-map-card__cross,
+.conteiner-map-card__worm,
+.conteiner-map-card__pike,
+.conteiner-map-card__booba {
+  -webkit-animation-name: bounce-out;
+          animation-name: bounce-out;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+}
+
+.conteiner-map-card__booba:active,
+.conteiner-map-card__worm:active {
+  -webkit-animation-name: flip;
+          animation-name: flip;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+.conteiner-map-card__cross:active,
+.conteiner-map-card__pike:active {
+  -webkit-animation-name: bounce-out;
+          animation-name: bounce-out;
+  background: url(/img/hand-drawn-halloween-bat.jpg) no-repeat center;
+  content: "\2663";
+  color: #fff;
+}
+
+.form_flex {
+  -webkit-box-shadow: -2px -1px 19px 1px #ff6500;
+          box-shadow: -2px -1px 19px 1px #ff6500;
+  width: 275px;
+  margin: 0 auto;
+  opacity: 1;
+  -webkit-animation-name: vertical_slide;
+          animation-name: vertical_slide;
+}
+
+.container_form {
+  -webkit-animation-name: vertical_slide;
+          animation-name: vertical_slide;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+}
+
+.container_form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  background-color: wheat;
+  width: 280px;
+  border-radius: 5%;
+  margin-top: 150px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url(/img/spider-1777668.svg);
+  background-size: auto 290px;
+}
+
+.registered {
+  text-align: center;
+  color: #ffff3b;
+  background-color: #000;
+  background: url();
+  border-radius: 10px;
+  opacity: 1;
+  font-size: 17px;
+  padding: 16px;
+  background-color: #fff;
+}
+
+input[type="text"] {
+  padding: 15px;
+  margin: 35px 0 10px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  opacity: 0.6;
+}
+
+input[type="password"] {
+  padding: 15px;
+  margin: 5px 0 10px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  opacity: 0.6;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  background-color: #ddd;
+  outline: none;
+  opacity: 1;
+}
+
+.registerbtn {
+  background-color: #ff000000;
+  color: rgba(0, 0, 0, 0.5);
+  padding: 5px 35px;
+  margin: 25px 0 10px 0;
+  cursor: pointer;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", fantasy;
+  border-radius: 10px;
+  font-size: 22px;
+  opacity: 0.5;
+  border: none;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+  color: black;
+}
+
+.footer_helloween_h {
+  font-family: "Gondola SD - Swash", sans-serif;
+  font-weight: bolder;
+  font-size: 2rem;
+  text-align: center;
+  color: black;
+  text-shadow: 0 0 10px red, 0 0 20px black, 0 0 30px black, 0 0 40px black;
+  line-height: 50px;
+  margin-top: 230px;
+  background: black;
+  height: 140px;
+}
+
+.hr {
+  -webkit-box-shadow: 1px -7px 15px 3px darkcyan;
+          box-shadow: 1px -7px 15px 3px darkcyan;
+}
+/*# sourceMappingURL=forms_stayle.css.map */

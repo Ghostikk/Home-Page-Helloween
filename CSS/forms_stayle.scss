@@ -1,0 +1,311 @@
+// миксины
+@import "./keyframes.scss";
+@import "./media.scss";
+
+$darkred: #ce1111;
+$yellow: rgb(255, 255, 153);
+$white: #fff;
+$black: #000;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background: url(/img/vecteezy.jpg) no-repeat;
+  background-color: wheat;
+  background-size: 1800px auto;
+  max-width: 1800px;
+  max-height: 1800px;
+}
+
+.header_helloween {
+  font-family: "Gondola SD - Swash", sans-serif;
+  font-weight: bolder;
+  font-size: 7rem;
+  text-align: center;
+  height: 200px;
+  box-shadow: 0px 20px 20px 0px $black;
+  margin-top: 10px;
+  color: orange;
+}
+
+.conteiner-map-card {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: url(/img/large_haunted_-house.jpg) no-repeat center;
+  background-size: 100%;
+  margin: 50px 0 0 0;
+  padding-left: 50px;
+  min-width: 215px;
+  opacity: 0.9;
+
+  .conteiner-map-card__worm,
+  .conteiner-map-card__cross,
+  .conteiner-map-card__pike,
+  .conteiner-map-card__booba {
+    width: 200px;
+    height: 300px;
+    border-radius: 5%;
+  }
+}
+
+.witch {
+  background: url(/img/flying-witch.png) no-repeat;
+  animation: witch-fly 6s infinite linear;
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  offset-path: path(
+    "m350, 525 l134,-45l38,-55l12,-45l7,-56l-4,-43l-14,-36l-28,-29l-43,-20l-64,-16l-59,24l-55,47l-9,58l13,61l33,35l31,26l53,31l96,40c0,0 131,-3 132,-3c1,0 150,-88 151,-89c1,-1 111,-95 111,-95c0,0 66,-86 67,-86c1,0 290,-389 290,-389"
+  );
+
+  opacity: 0.75;
+}
+
+.conteiner-map-card__worm,
+.conteiner-map-card__cross,
+.conteiner-map-card__pike,
+.conteiner-map-card__booba {
+  display: flex;
+  justify-content: space-between;
+  line-height: 35px;
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: -5px;
+}
+
+.conteiner-map-card__worm {
+  box-shadow: 0 0px 2px 3px $yellow;
+  color: red;
+  background: url(/img/sugarskull-with-roses.jpg) repeat-y center
+    rgba($white, 0.9);
+  margin: 25px 50px 25px 0px;
+  width: 300px;
+
+  &:before {
+    content: "\2665";
+    font-size: 25px;
+    padding: 5px 0px 0px 5px;
+  }
+
+  &:after {
+    content: "\2665";
+    font-size: 25px;
+    align-self: flex-end;
+    padding: 0px 10px 15px 0px;
+  }
+}
+
+.conteiner-map-card__cross {
+  box-shadow: 0 0px 2px 3px $yellow;
+  background: url(/img/scary-pumpkin.jpg) no-repeat center rgba($white, 0.9);
+  color: $white;
+  margin: 25px 50px 25px 0px;
+
+  &:before {
+    content: "\2663";
+    font-size: 25px;
+    padding: 5px 0px 0px 5px;
+  }
+
+  &:after {
+    content: "\2663";
+    font-size: 25px;
+    align-self: flex-end;
+    padding: 25px 10px 15px 0px;
+  }
+}
+
+.conteiner-map-card__pike {
+  box-shadow: 0 0px 2px 3px $yellow;
+  background: url(/img/witch-hallowen.jpg) repeat-y center rgb(0, 0, 0);
+  color: $white;
+  margin: 25px 50px 25px 0px;
+
+  &:before {
+    content: "\2660";
+    font-size: 30px;
+    padding: 0px 0px 0px 5px;
+    color: $white;
+  }
+
+  &:after {
+    content: "\2660";
+    font-size: 30px;
+    align-self: flex-end;
+    padding: 0px 10px 15px 0px;
+    color: $white;
+  }
+
+  &:active {
+    background: url(/img/witch-hallowen.jpg) no-repeat center rgb(0, 0, 0);
+  }
+}
+
+.conteiner-map-card__booba {
+  color: rgb(255, 0, 0);
+  margin: 25px 50px 25px 0px;
+
+  &:before {
+    content: "\2666";
+    font-size: 30px;
+    padding: 0px 0px 0px 5px;
+  }
+
+  &:after {
+    content: "\2666";
+    font-size: 30px;
+    align-self: flex-end;
+    padding: 0px 10px 15px 0px;
+  }
+
+  &:last-child {
+    margin-right: 0;
+    background: url(/img/da-a-de-muertos-illustration.jpg) no-repeat center
+      opacify($color: #000000, $amount: 0.8);
+    box-shadow: 0 0px 2px 3px $yellow;
+    background-size: 210px 300px;
+  }
+}
+
+.card__worm-number-h {
+  padding: 5px 0px 0px 0px;
+  width: 35px;
+}
+
+.card__worm-number-f {
+  align-self: flex-end;
+  padding: 0px 0px 15px 85px;
+}
+
+.conteiner-map-card {
+  animation-name: slide;
+  animation-duration: 3s;
+}
+
+.conteiner-map-card__cross,
+.conteiner-map-card__worm,
+.conteiner-map-card__pike,
+.conteiner-map-card__booba {
+  animation-name: bounce-out;
+  animation-duration: 4s;
+}
+
+.conteiner-map-card__booba:active,
+.conteiner-map-card__worm:active {
+  animation-name: flip;
+  animation-duration: 3s;
+}
+
+.conteiner-map-card__cross:active,
+.conteiner-map-card__pike:active {
+  animation-name: bounce-out;
+  background: url(/img/hand-drawn-halloween-bat.jpg) no-repeat center;
+  content: "\2663";
+  color: $white;
+}
+
+.form_flex {
+  box-shadow: -2px -1px 19px 1px #ff6500;
+  width: 275px;
+  margin: 0 auto;
+  opacity: 1;
+  animation-name: vertical_slide;
+}
+
+.container_form {
+  animation-name: vertical_slide;
+  animation-duration: 5s;
+}
+
+.container_form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  background-color: wheat;
+  width: 280px;
+  border-radius: 5%;
+  margin-top: 150px;
+  align-items: center;
+  background: url(/img/spider-1777668.svg);
+  background-size: auto 290px;
+}
+
+.registered {
+  text-align: center;
+  color: #ffff3b;
+  background-color: $black;
+  background: url();
+
+  border-radius: 10px;
+  opacity: 1;
+  font-size: 17px;
+  padding: 16px;
+  background-color: $white;
+}
+
+input[type="text"] {
+  padding: 15px;
+  margin: 35px 0 10px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  opacity: 0.6;
+}
+
+input[type="password"] {
+  padding: 15px;
+  margin: 5px 0 10px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  opacity: 0.6;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  background-color: #ddd;
+  outline: none;
+  opacity: 1;
+}
+
+.registerbtn {
+  background-color: #ff000000;
+  color: rgba(rgb(0, 0, 0), 0.5);
+  padding: 5px 35px;
+  margin: 25px 0 10px 0;
+  cursor: pointer;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", fantasy;
+  border-radius: 10px;
+  font-size: 22px;
+  opacity: 0.5;
+  border: none;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+  color: rgba(rgb(0, 0, 0), 1);
+}
+
+.footer_helloween_h {
+  font-family: "Gondola SD - Swash", sans-serif;
+  font-weight: bolder;
+  font-size: 2rem;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  text-shadow: 0 0 10px rgb(255, 0, 0), 0 0 20px rgb(0, 0, 0),
+    0 0 30px rgb(0, 0, 0), 0 0 40px rgb(0, 0, 0);
+  line-height: 50px;
+  margin-top: 230px;
+  background: black;
+  height: 140px;
+}
+
+.hr {
+  box-shadow: 1px -7px 15px 3px darkcyan;
+}
